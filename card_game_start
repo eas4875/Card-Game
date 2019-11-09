@@ -1,0 +1,23 @@
+import random 
+user_cards = []
+computer_cards = []
+index = 0
+while index < 3:
+    user_cards.append(random.randint(1000, 5000))
+    computer_cards.append(random.randint(1000, 5000))
+    index += 1
+for number in range(1,3)
+    print("The first card is: ", user_cards[0])
+    print("The second card is: ", user_cards[1])
+    print("The third card is: ", user_cards[2])
+
+    battle_card_user = int(input('What card do you want choose (0, 1, 2): '))
+    battle_card_computer = random.randint(0,2)
+    print("The computer choose: ", computer_cards[battle_card_computer])
+
+    if user_cards[battle_card_user] > computer_cards[battle_card_computer]:
+        print("user wins!")
+    elif user_cards[battle_card_user] == computer_cards[battle_card_computer]:
+        print ("draw")
+    else:
+        print("computer wins," )
